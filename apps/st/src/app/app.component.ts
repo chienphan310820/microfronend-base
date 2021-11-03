@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-base-mfe-root',
@@ -7,18 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent{
-  title = 'st';
-  // results;
-  //       // constructor(private userSevice: UserService) { }
-  //     constructor(private http: HttpClient) { }
-
-  //     ngOnInit(): void {
-  //       // this.userSevice.getData().subscribe(res => {
-  //       //   this.results = res;
-  //       // })
-  //     this.http.get("http://jsonplaceholder.typicode.com/users").subscribe(data => {
-  //       console.log(data);
-  //       this.results = data;
-  //     });
-  // }
+  title = 'Soan Thao';
 }

@@ -9,12 +9,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { UserService } from './remote-entry/services/user.services';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forChild([
+      {
+        path: 'user',
+        component: UserService,
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent],
