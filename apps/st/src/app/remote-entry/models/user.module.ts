@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { UserService } from '../services/user.services';
+import { UserService } from '../services/user/user.services';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [

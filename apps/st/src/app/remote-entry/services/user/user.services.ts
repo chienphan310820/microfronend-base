@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'ng-base-mfe-user',
-  templateUrl: '../user/user.component.html',
-  styleUrls: ['../user/user.component.scss']
+  templateUrl: '../../user/user.component.html',
+  styleUrls: ['../../user/user.component.scss']
 })
 export class UserService implements OnInit {
     results;
