@@ -9,7 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { UserService } from './remote-entry/services/user/user.services';
+import { UserComponent } from './remote-entry/user/user.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forChild([
       {
         path: 'user',
-        component: UserService,
+        component: UserComponent,
       }
     ])
   ],

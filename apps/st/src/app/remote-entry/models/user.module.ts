@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { UserService } from '../services/user/user.services';
+import { UserComponent } from '../user/user.component';
 import { FormsModule } from '@angular/forms';
+import { Interceptor } from '../../../../../dashboard/src/app/interceptors/intercept/interceptors';
 @NgModule({
   declarations: [
-    UserService,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
   ],
   exports: [RouterModule],
-  providers: [],
-  bootstrap: [UserService]
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true },
+  ],  bootstrap: [UserComponent]
 })
 export class AppModule { }

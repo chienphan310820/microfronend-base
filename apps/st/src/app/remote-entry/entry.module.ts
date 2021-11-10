@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { RemoteEntryComponent } from './entry.component';
-import { UserService } from './services/user/user.services';
+import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [RemoteEntryComponent, UserService],
+  declarations: [RemoteEntryComponent, UserComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
       },
       {
         path: 'user',
-        component: UserService,
+        component: UserComponent,
       }
     ]),
   ],
