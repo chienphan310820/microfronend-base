@@ -5,7 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { UserComponent } from '../user/user.component';
 import { FormsModule } from '@angular/forms';
-import { Interceptor } from '../../../../../dashboard/src/app/interceptors/intercept/interceptors';
+import { Interceptor } from '../../interceptors/interceptor';
+
+// import { Interceptor } from '../../../../../dashboard/src/app/interceptors/intercept/interceptors';
 @NgModule({
   declarations: [
     UserComponent,

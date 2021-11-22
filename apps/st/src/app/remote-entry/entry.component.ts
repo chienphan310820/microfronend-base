@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-base-mfe-st-entry',
@@ -20,14 +18,4 @@ import { HttpClient } from '@angular/common/http';
     `,
   ],
 })
-export class RemoteEntryComponent implements OnInit{
-  results;
-  constructor(private http: HttpClient) { }
-
-  ngOnInit(): void {
-  this.http.get("http://jsonplaceholder.typicode.com/users").subscribe(data => {
-    console.log(data);
-    this.results = data;
-  });
-}
-}
+export class RemoteEntryComponent{}
